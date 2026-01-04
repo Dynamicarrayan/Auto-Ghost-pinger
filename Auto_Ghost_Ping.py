@@ -36,7 +36,7 @@ if __name__ == "__main__":
     #input program
     ping = input("please input the name of ur target for example @someone : ")
     print("PRESS F11 first for full screen or else it didnt work")
-    print("Press F4 to activate, F2 to deactivate, F to rename.")
+    print("Press F4 to activate, F2 to deactivate, F to rename, ESC to end program.")
     
     # BIND KEYS
     keyboard.add_hotkey('F4', toggle_on)
@@ -67,3 +67,4 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         print("Program stopped.")
+
