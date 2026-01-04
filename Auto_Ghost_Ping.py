@@ -1,14 +1,15 @@
-# PROGRAM: Autoghostpinger
-# This program ghost ping repeatedly when activated with F4 and stops with F2
+# PROGRAM: Auto ghost pinger
+# This program ghost ping repeatedly on discord!
+# Recommended to use the python terminal
 
 # DEKLARASI - Library
 import keyboard 
 import pyautogui
 import time
+import sys
 
 # DEKLARASI - Variable
 active = False
-deactive = False
 
 # DEKLARASI - Subprogram
 def toggle_on():
@@ -22,12 +23,13 @@ def toggle_off():
     print("Stop!")
 
 def addname():
-    global active
-    active = True
     global ping
     ping = input("please input the name of ur target for example @someone : ")
 
-
+def end_program():
+    print("Program ended")
+    sys.exit()
+    
 #algoritma
 if __name__ == "__main__":
 
@@ -40,6 +42,7 @@ if __name__ == "__main__":
     keyboard.add_hotkey('F4', toggle_on)
     keyboard.add_hotkey('F2', toggle_off)
     keyboard.add_hotkey("F", addname)
+    keyboard.add_hotkey('esc', end_program)
 
     #proses program
     try:
