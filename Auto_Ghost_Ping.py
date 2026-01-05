@@ -1,7 +1,6 @@
 # PROGRAM: Auto ghost pinger
 # This program ghost ping repeatedly on discord!
 # Recommended to use the python terminal
-# the code is kinda broken i think
 
 # DEKLARASI - Library
 import keyboard 
@@ -68,5 +67,6 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         print("Program stopped.")
+
 
 
